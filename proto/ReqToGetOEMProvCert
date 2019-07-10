@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+option java_outer_classname = "ReqToGetOEMProvCert";
+
+message ReqToGetOEMProvCertFormat {
+	
+	required string pcid = 1;
+}

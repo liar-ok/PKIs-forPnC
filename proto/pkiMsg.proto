@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+option java_outer_classname = "PkiMsg";
+
+message PkiMsgFormat {
+	
+	required string type = 1;
+	required bytes payload = 2;
+}

@@ -1,0 +1,13 @@
+syntax = "proto2";
+
+option java_outer_classname = "ResWithCert";
+
+message ResWithCertFormat {
+	
+	repeated CertInfo certInfo = 1;
+}
+
+message CertInfo {
+	required bytes certFile = 1;
+	required string certFileName = 2;
+}

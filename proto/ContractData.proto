@@ -1,0 +1,12 @@
+syntax = "proto2";
+
+option java_outer_classname = "ContractData";
+
+message ContractDataFormat {
+	
+	required string emaid = 1;
+	required bytes dHPublicKey = 2;
+	required bytes contractEncryptedPrivateKey = 3;
+	repeated bytes contractCertChain = 4;
+	optional string pcid = 5;
+}

@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+option java_outer_classname = "ReqToIssueCrossCert";
+
+message ReqToIssueCrossCertFormat {
+	
+	required bytes subjectCsrFile = 1;
+	required string subjectCertName = 2; 
+}
