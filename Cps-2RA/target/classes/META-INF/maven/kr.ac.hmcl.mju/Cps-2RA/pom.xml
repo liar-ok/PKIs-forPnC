@@ -1,0 +1,68 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>kr.ac.hmcl.mju</groupId>
+	<artifactId>Cps-2RA</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<packaging>jar</packaging>
+
+	<name>Cps-2RA</name>
+	<url>http://maven.apache.org</url>
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<protobuf.version>3.4.0</protobuf.version>
+	</properties>
+
+	<repositories>
+		<!-- OpenEXI jars deployed in the /repo folder of RISE-V2G-Shared. See 
+			https://devcenter.heroku.com/articles/local-maven-dependencies for how to 
+			deploy .jars locally which are not published in a public Maven repo. -->
+		<repository>
+			<id>project.local</id>
+			<name>project</name>
+			<url>file:${project.basedir}/repo</url>
+		</repository>
+	</repositories>
+
+	<dependencies>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>3.8.1</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>com.google.protobuf</groupId>
+			<artifactId>protobuf-java</artifactId>
+			<version>${protobuf.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.logging.log4j</groupId>
+			<artifactId>log4j-api</artifactId>
+			<version>2.9.1</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.logging.log4j</groupId>
+			<artifactId>log4j-core</artifactId>
+			<version>2.9.1</version>
+		</dependency>
+		<dependency>
+			<groupId>com.siemens.ct.exi</groupId>
+			<artifactId>exificient</artifactId>
+			<version>0.9.6</version>
+		</dependency>
+		<dependency>
+			<groupId>net.sourceforge.openexi</groupId>
+			<artifactId>nagasena</artifactId>
+			<version>0000.0002.0052.0</version>
+		</dependency>
+		<dependency>
+			<groupId>net.sourceforge.openexi</groupId>
+			<artifactId>nagasena-rta</artifactId>
+			<version>0000.0002.0052.0</version>
+		</dependency>
+
+	</dependencies>
+</project>
