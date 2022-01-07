@@ -35,7 +35,7 @@
 	</dependencies>
 
 	<properties>
-		<protobuf.version>3.4.0</protobuf.version>
+		<protobuf.version>3.16.1</protobuf.version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
 </project>
